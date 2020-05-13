@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zootopia-Hindi Streaming Videos</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="icon" href="media/icon.png"/>
+        <!--Font Awesome library-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+        <!---------------------------Google Fonts----------------------------------------->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/index.css"/>
+     
+    </head>
+    <body>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="media/user-image.jpg" alt="Profile Image of User" />
+            <h6>My Account &darr;</h6>
+            <li class="navbar-center">
+              <input type="text" name="search_video" placeholder="Search For Videos" />
+              <button class="fab fa-searchengin search-btn-navbar" ></button>
+            </li>
+            <li class="navbar-center">
+              <a href="english-video-dashboard.html" target="_top">Watch New English Uploads</a>
+            </li>
+            <li class="navbar-center">
+              <a href="punjabi-video-dashboard.html" target="_top">Watch New Punjabi Uploads</a>
+            </li>
+            <li class="navbar-center">
+              <a href="hindi-video-dashboard.html" target="_top">Watch New Hindi Uploads</a>
+            </li>
+            <div class="dropdown">
+             <a href="#">Upload a Video</a>
+              <div class="dropdown-content">
+                <input type="file" accept="video/*" />
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <a href="#">Notifications</a>
+               <div class="dropdown-content">
+                <div class="flex-container">
+                  <div class="row">
+                    <img src="media/notify.png" alt="User"/>
+                    <p>Your Have a New Notifiation.!</p>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <img src="media/notify.png" alt="User"/>
+                    <p>Your Have a New Notifiation.!</p>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <img src="media/notify.png" alt="User"/>
+                    <p>Your Have a New Notifiation.!</p>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <img src="media/notify.png" alt="User"/>
+                    <p>Your Have a New Notifiation.!</p>
+                  </div>
+                </div>
+               </div>
+             </div>
+          </div>
+            <!---------------------------------------------------The top Navigation Bar begins here
+                                                                                        --------------------------------->
+            <nav id="top_navbar">
+              <div class="nav_items">
+                  <ul class="navbar_list">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="navbar-toggler">&#9776;</span>
+                    <li class="navbar-left">
+                      <a href="index.html" ><img src="media/navbar-logo.png" alt="Zootopia Logo Image" class="navbar_logo"/>
+                      </a>
+                    </li>
+                      <li class="navbar-center">
+                        <input type="text" name="search_video" placeholder="Search For Videos" />
+                        <button class="fab fa-searchengin search-btn-navbar" ></button>
+                      </li>
+                      <div class="navbar_right-icons navbar-right">
+                        <!-----------------
+                                          Dropdown Menu for uploading videos
+                                                                  --------------->
+                          <span id="video_upload-dropdown">
+                            <i class="fas fa-video"></i>
+                            <div class="dropdown_menu ">
+                              <input type="file" accept="video/*" class="dropdown_video-upload"/>
+                            </div>
+                          </span>
+                           <!-----------------
+                                          Dropdown Menu for notifications
+                                                                  --------------->
+                          <span id="notification-dropdown">
+                            <i class="fas fa-bell"></i>
+                            <div class="dropdown_menu dropdown_notification">
+                              <div class="flex-container">
+                              <div class="row">
+                                <img src="media/notify.png" alt="User"/>
+                                <p>Your Have a New Notifiation.!</p>
+                              </div>
+                              <hr/>
+                              <div class="row">
+                                <img src="media/notify.png"alt="User"/>
+                                <p>Your Have a New Notifiation.!</p>
+                              </div>
+                              <hr/>
+                              <div class="row">
+                                <img src="media/notify.png" alt="User"/>
+                                <p>Your Have a New Notifiation.!</p>
+                              </div>
+                              <hr/>
+                              <div class="row">
+                                <img src="media/notify.png" alt="User"/>
+                                <p>Your Have a New Notifiation.!</p>
+                              </div>
+                            </div>
+                            </div>
+                          </span>
+                          <span class="user-image">
+                            <img src="media/user-image.jpg" alt="Profile Image of User" />
+                          </span>
+                      </div>
+                   </ul>   
+              </div>
+          </nav>
+          <div class="punjabi-english-hindi-page-redirect">
+            <a href="punjabi-video-dashboard.html" target="_top">Browse Punjabi Videos</a>
+            <a href="english-video-dashboard.html" target="_top">Browse English Videos</a>
+          </div>
+            
+          <h2 class="hindiDashboardHeading">Latest Hindi Video Songs</h2>
+          <hr class="hr-line-head-bottom"/>
+          <section id="main_dashboard">
+            <div class="video-play-frame">
+            <iframe id="video_play-frameEnglish" name="videoPlayer" src="media/bg-poster.png " allowfullscreen frameborders="0"></iframe>
+          </div>
+          <div class="video-playlist">
+            <div class="card">
+              <li>
+                  <figure>
+                    
+                    <img src="media/hindi/khalibali.png" alt="Chaand Sifarish Poster">
+                    <figcaption>
+                      <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                      <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                    </figcaption>
+                  </figure>
+                  <p>
+                    Padmaavat: Khalibali - Ranveer Singh | Deepika Padukone | Shahid Kapoor | Shivam Pathak
+                  </p>
+                  <h5>197,116,657 views Jan 23, 2012</h5>
+                  <a href="https://www.youtube.com/embed/v7K4vGYL9zI"  target="videoPlayer">View Video</a>
+                </li>
+          </div>
+          <div class="card">
+            <li>
+                <figure>
+                  
+                  <img src="media/hindi/shaitaan-ka-saala.png" alt="Chaand Sifarish Poster">
+                  <figcaption>
+                    <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                    <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                  </figcaption>
+                </figure>
+                <p>
+                  Housefull 4: Shaitan Ka Saala Video | Akshay Kumar | Sohail Sen Feat. Vishal Dadlani
+                </p>
+                <h5>197,116,657 views Jan 23, 2012</h5>
+                <a href="https://www.youtube.com/embed/oCBDl58lBoU"  target="videoPlayer">View Video</a>
+              </li>
+        </div>
+        <div class="card">
+          <li>
+              <figure>
+                
+                <img src="media/hindi/yaad-piya-ki.png" alt="Chaand Sifarish Poster">
+                <figcaption>
+                  <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                  <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                </figcaption>
+              </figure>
+              <p>
+                Yaad Piya Ki Aane Lagi | Divya Khosla Kumar |Neha K,Tanishk B,Jaani, Faisu, Radhika&Vinay |Bhushan Kumar
+              </p>
+              <h5>197,116,657 views Jan 23, 2012</h5>
+              <a href="https://www.youtube.com/embed/eN6AYHAT8UM"  target="videoPlayer">View Video</a>
+            </li>
+      </div>
+            <div class="card">
+                <li>
+                    <figure>
+                      
+                      <img src="media/hindi/chaand-sifarish.png" alt="Chaand Sifarish Poster">
+                      <figcaption>
+                        <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                        <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Chand Sifarish - Full Song | Fanaa | Aamir Khan | Kajol | Shaan | Kailash Kher
+                    </p>
+                    <h5>197,116,657 views Jan 23, 2012</h5>
+                    <a href="https://www.youtube.com/embed/zWEOx7TSM6I"  target="videoPlayer">View Video</a>
+                  </li>
+            </div>
+            <div class="card">
+                <li>
+                    <figure>
+                      
+                      <img src="media/hindi/daawat-ishq.png" alt="Dawat-E-Ishq Poster">
+                      <figcaption>
+                        <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                        <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Daawat-e-Ishq - Full Song | Aditya Roy Kapur | Parineeti Chopra | Javed Ali | Sunidhi Chauhan
+                    </p>
+                    <h5>197,116,657 views Jan 23, 2012</h5>
+                    <a href="https://www.youtube.com/embed/xsWs0qWQlzE" target="videoPlayer">View Video</a>
+                  </li>
+            </div>
+            <div class="card">
+                <li>
+                    <figure>
+                     
+                      <img src="media/hindi/dil-se-re.png" alt="Dil Se Re Poster">
+                      <figcaption>
+                        <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                        <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Dil Se Re Full Song | Dil Se | Shahrukh Khan, Manisha Koirala | A R Rahman
+                    </p>
+                    <h5>197,116,657 views Jan 23, 2012</h5>
+                    <a href="https://www.youtube.com/embed/YwfCMvo19s8" target="videoPlayer">View Video</a>
+                  </li>
+            </div>
+            <div class="card">
+                <li>
+                    <figure>
+                     
+                      <img src="media/hindi/dil-toh-pagal-hai.jpg" alt="Dil Se Re Poster">
+                      <figcaption>
+                        <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                        <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Dil To Pagal Hai | Full Song | Shah Rukh Khan, Madhuri, Karisma, Akshay K | Lata Mangeshkar, Udit Narayan
+                    </p>
+                    <h5>197,116,657 views Jan 23, 2012</h5>
+                    <a href="https://www.youtube.com/embed/lZ2PhyBF3GQ" target="videoPlayer">View Video</a>
+                  </li>
+            </div>
+            <div class="card">
+              <li>
+                  <figure>
+                   
+                    <img src="media/hindi/filhaal.png" alt="Dil Se Re Poster">
+                    <figcaption>
+                      <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                      <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                    </figcaption>
+                  </figure>
+                  <p>
+                    FILHALL | Akshay Kumar Ft Nupur Sanon | BPraak | Jaani | Arvindr Khaira | Ammy Virk
+                  </p>
+                  <h5>197,116,657 views Jan 23, 2012</h5>
+                  <a href="https://www.youtube.com/embed/hMy5za-m5Ew" target="videoPlayer">View Video</a>
+                </li>
+          </div>
+          <div class="card">
+            <li>
+                <figure>
+                 
+                  <img src="media/hindi/hawayein.png" alt="Dil Se Re Poster">
+                  <figcaption>
+                    <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                    <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                  </figcaption>
+                </figure>
+                <p>
+                  Hawayein Lyric Video - Jab Harry Met Sejal|Shah Rukh Khan, Anushka|Arijit Singh|Pritam
+                </p>
+                <h5>197,116,657 views Jan 23, 2012</h5>
+                <a href="https://www.youtube.com/embed/cYOB941gyXI" target="videoPlayer">View Video</a>
+              </li>
+        </div>
+        <div class="card">
+          <li>
+              <figure>
+               
+                <img src="media/hindi/hum-tum.png" alt="Dil Se Re Poster">
+                <figcaption>
+                  <img src="media/hindi/yrf-logo.png" alt="Yash Raj Movies Logo" id="logo-image">
+                  <h3>Yash Raj Films<i class="fas fa-user-check" style="margin-left:5px;color:#01b6ab;"></i></h3>
+                </figcaption>
+              </figure>
+              <p>
+                Hum Tum - Full Title Song | Saif Ali Khan | Rani Mukerji | Alka Yagnik | Babul Supriyo
+              </p>
+              <h5>197,116,657 views Jan 23, 2012</h5>
+              <a href="https://www.youtube.com/embed/94XJ_F4Z71g" target="videoPlayer">View Video</a>
+            </li>
+      </div>
+          </div>
+        </section>
+        <footer id="footer">
+          <h5>Website Created with &hearts; By <a href="https://www.linkedin.com/in/vaibhav-kaul-ab5941182/" target="_blank">Vaibhav Kaul.</a></h5>
+        </footer>
+        </body>
+        <script src="get-item-localstorage.js"></script>
+        <script>
+            function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+        </script>
+</html>
