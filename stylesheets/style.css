@@ -2,6 +2,19 @@
     font-family:harryPotterFont;
     src:url('../fonts/HARRYP.ttf');
 }
+@font-face{
+
+    font-family: quicksand-bold;
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+@font-face{
+    font-family: quicksand-light;
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+@font-face{
+    font-family: quicksand-regular;
+    src: url('../fonts/Quicksand-Regular.ttf');
+}
 *{
     margin:0px;
     padding: 0px;
@@ -26,7 +39,7 @@ body{
 .section_heading{
     color:#fff;
     text-transform: capitalize;
-    font-family:harryPotterFont;
+    font-family: quicksand-light;
     font-size:4rem;
     text-align: center;
     letter-spacing: 5px;
