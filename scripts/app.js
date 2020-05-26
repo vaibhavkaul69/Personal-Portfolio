@@ -1,6 +1,6 @@
 let image=new Image();
     image=document.createElement('img');
-    image.src='./assets/vaibhav-photo.png';
+    image.src='/assets/vaibhav-photo.webp';
     
 image.onload=()=>{
     document.getElementById('image').appendChild(image);
