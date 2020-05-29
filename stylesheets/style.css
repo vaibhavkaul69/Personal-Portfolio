@@ -97,9 +97,9 @@ body{
     min-width:15%;
     box-sizing: border-box;
     height: 100vh;
-    top:20px;
+    top:10px;
     position: fixed;
-    background: #0009;
+    background: #000;
     justify-content:center;
     z-index: 100;
     overflow-y:scroll;
