@@ -4,15 +4,54 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="icon" href="assets/vaibhav-photo.webp"/>
         <title>Portfolio Website Coming Soon</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
     </head>
     <link rel="stylesheet" href="stylesheets/style.css"/>
     <body>
+        <button class="navbar_toggler_icon_open">&#9776; </button>
+        <h3 class="name_top_head">VaibhavKaul</h3>
+        <nav class="navbar_top">
+            <ul class="navbar_list_item">
+                    <li><a class='about' href="#about_section"><i class="fas fa-user-check"></i>About</a></li>
+                    <li><a class='skills' href="#skills_section"><i class="fab fa-studiovinari"></i>Skills</a></li>
+                    <li><a class='internships' href="#internships_section"><i class="fas fa-paper-plane"></i>Internships</a></li>
+                    <li><a class='projects' href="#projects_section"><i class="fas fa-tasks"></i>Projects</a></li>
+                    <li><a class='resume' href="#resume_section"><i class="fas fa-address-card"></i></i>Resume</a></li>
+            </ul>
+        </nav>
       <main id="main_content">
+          <div class="loader"></div>
           <section class="section" id="name_section">
-
+            <!--
+            <div class="sidenav_toggler">
+                <button class="navbar_toggler_icon_close">X </button>
+                <ul class="sidenav_list">
+                        <li><a href="#about_section">About</a></li>
+                        <li><a href="#skills_section">Skills</a></li>
+                        <li><a href="#internships_section">Internships</a></li>
+                        <li><a href="#projects_section">Projects</a></li>
+                </ul>
+            </div>
+            -->
           </section>
+
           <section class="section" id="about_section">
-            <h1 class="section_heading">Know More About me</h1>
+            
+            <div class="sticky_about">
+                <nav class="navbar_sign_left_name">
+                   
+                </nav>
+                <div class="intro_flex_container">
+                    <div class="display_image">
+                        <img src="/assets/vaibhav-photo.webp" alt="My Display Picture"/>
+                    </div>
+                    <div class="my_intro">
+                        <!--<img src="/assets/greet.gif">-->
+                        <p>Hello people i am vaibhav kaul a self-taught Frontend Web Developer.Technology has always fascinated me. I am a change enthusiast! and i am planning to help people in any way possible. in my free time i watch movies, standup comedy  or some TEDx videos on youtube. I am a state level badminton player. i have done theatre for 3 years in my university and have performed various stage and street plays.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section" id="skills_section">
             <h1 class="section_heading"> skills</h1>
@@ -20,13 +59,13 @@
         <section class="section" id="internships_section">
             <h1 class="section_heading"> internships</h1>
         </section>
-        <section class="section" id="internships_section">
+        <section class="section" id="projects_section">
             <h1 class="section_heading"> projects</h1>
         </section>
-        <section class="section" id="internships_section">
+        <section class="section" id="reviews_section">
             <h1 class="section_heading"> reviews</h1>
         </section>
       </main>  
     </body>
-    <!--<script src="scripts/app.js"></script>-->
+    <script src="scripts/app.js"></script>
 </html>

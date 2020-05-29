@@ -1,68 +1,18 @@
-let image=new Image();
-    image=document.createElement('img');
-    image.src='/assets/vaibhav-photo.webp';
+document.body.onload=()=>{
+    document.querySelector('.loader').style.cssText='opacity:0; display:none;';
+    console.log('Body Loaded');
+};
+const navbarOpenBtn=document.querySelector('.navbar_toggler_icon_open');
+const sideNavOpen=document.querySelector('.navbar_top');
+
+navbarOpenBtn.addEventListener('click',()=>{
+  if(navbarOpenBtn.classList.contains('open_side_nav')){
+    sideNavOpen.style.opacity='0';
+    navbarOpenBtn.classList.toggle('open_side_nav')
+  }
+  else{
+    sideNavOpen.style.opacity='1';
+    navbarOpenBtn.classList.toggle('open_side_nav')
+  }
     
-image.onload=()=>{
-    document.getElementById('image').appendChild(image);
-}
-
-const createElementNode=(nodeElement)=>{
-    return document.createElement(nodeElement);
-}
-
-const createTextNode=(elementNode,text)=>{
-    elementNode.textContent=text;
-    return;
-}
-
-const appendNode=(parent,child)=>{
-    return parent.appendChild(createElementNode(child));
-}
-
-const setElementAttribute=(elementNode,attributeName,attributeValue)=>{
-    return elementNode.setAttribute(attributeName,attributeValue);
-}
-
-const fadeInOut=()=>{
-    document.getElementById('name_text').style.cssText='opacity:1;font-family:harryPotterFont;';
-}
-
-/*
-let videoElement=appendNode(document.getElementById('intro_video'),'video');
-console.log(videoElement);
-
-let sourceElement=appendNode(videoElement,'source');
-sourceElement.src='./assets/intro-back-bg-video.mp4';
-
-videoElement.classList.add('intro_background-video');
-setElementAttribute(videoElement,'loop','loop');
-setElementAttribute(videoElement,'autoplay','autoplay');
-setElementAttribute(sourceElement,'type','video/mp4');
-*/
-const nameArray=['V','a','i','b','h','a','v',' ','K','a','u','l'];
-
-
-const video=document.querySelector('.intro_background-video');
-video.addEventListener('timeupdate',()=>{
-    console.log(video.currentTime.toFixed(1));
-    if(video.currentTime.toFixed(1)==9.4){
-        for(let i=0;i<12;i++){
-            createTextNode(appendNode(document.getElementById('name_text'),'span'),nameArray[i]);
-            fadeInOut();
-        }
-    }
 });
-
-video.addEventListener('ended',()=>{
-    document.getElementById('image').scrollIntoView();
-})
-
-/*
-
-document.getElementById('intro_video').innerHTML=`
-    <div class="overlay"></div>
-        <video loop autoplay  class="intro_background-video" >
-            <source src="" type="video/mp4"/>
-        </video>
-`;
-*/
