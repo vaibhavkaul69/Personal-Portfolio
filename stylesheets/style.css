@@ -50,25 +50,27 @@ body{
 .loader{
     height: 100vh;
     width:100%;
-    background: linear-gradient(to right top,#000428,#004e92,#3a7bd5,#4CA1AF,);
-    background-size: 500%;
+    background: linear-gradient(to right top,#fff,#b21f1f,#FF0099,#004e92,#00F260);
+    background-size: 400%;
     overflow-y: hidden;
     z-index: 999;
     position: fixed;
     opacity: 1;
     transition: all 0.5s ease-in-out;
     animation: color 1s infinite alternate;
+    color:#1565C0;
+    font-weight:600;
 }
 
 @keyframes color{
     0%{
-        background-size: 400%;
-    }
-    25%{
         background-size: 300%;
     }
-    50%{
+    25%{
         background-size: 200%;
+    }
+    50%{
+        background-size: 150%;
     }
     100%{
         background-size: 100%;
@@ -99,7 +101,7 @@ body{
     background: #0009;
     justify-content:flex-start;
     color:#fff;
-    z-index: 999;
+    z-index: 100;
     overflow:scroll;
     align-items: center;
 }
@@ -174,13 +176,12 @@ body{
     width:100%;
    margin:10px auto;
 }
-.navbar_toggler_icon_open,
-.navbar_toggler_icon_close{
+.navbar_toggler_icon_open{
     background-color: transparent;
     color:#fff;
     display: none;
     border:none;
-    z-index: 999;
+    z-index: 100;
     font-size: 2rem;
     outline: none;
     padding: 10px;
@@ -229,7 +230,6 @@ body{
     }
     .navbar_toggler_icon_open{
         display: inline;
-        z-index: 999;
         position: fixed;
         background-color: #0009;
         padding: 15px;
