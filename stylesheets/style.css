@@ -315,6 +315,7 @@ body{
     }
     .sticky_about > .intro_flex_container > .display_image > img{
         width:100%;
+        transition: all 1s ease-in-out;
     }
     .sticky_about > .intro_flex_container > .my_intro{
         width:100%;
