@@ -376,23 +376,7 @@ body{
       border-radius: 5px;
       outline: none;
   }
-  .swiper-pagination-bullet {
-    min-width: 20px;
-    min-height: 20px;
-    text-align: center;
-   
-    padding: 2px;
-    font-family:dancing-script-bold, "baskerville old face";
-    font-size: 1rem;
-    text-align: center;
-    color:#fff!important;
-    opacity: 1;
-    background:#b21f1f !important;
-  }
-  .swiper-pagination-bullet-active {
-    color:#fff;
-    background: #007aff !important;
-  }
+
 #footer_bottom{
     width:100%;
     min-height:100px;
