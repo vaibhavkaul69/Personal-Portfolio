@@ -8,6 +8,13 @@
         <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
         <link rel="stylesheet" href="css/swiper.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <script>
+            let canViewWebpagePassword=sessionStorage.getItem('password-website');
+            if(canViewWebpagePassword == null || canViewWebpagePassword == undefined){
+                canViewWebpagePassword='vaibhav@123';
+                sessionStorage.setItem('password-website',canViewWebpagePassword);
+            }
+        </script>
     </head>
     <body>
         <div class="loader"></div>

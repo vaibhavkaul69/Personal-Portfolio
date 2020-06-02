@@ -45,8 +45,22 @@ body{
     height:100vh;
     width:100vw;
     background:linear-gradient(to right bottom ,#000,rgba(33, 147, 176, 0.4), #000), url('/assets/bg.gif') center no-repeat;
-    background-size: cover;
+    
 }
+.hidden-content{
+    text-align: center;
+    margin:5rem auto;
+    color:#fff;
+    padding: 10px;;
+    font-family: quicksand-bold;
+    font-size: 2rem;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .loader{
     height: 100vh;
     width:100%;
@@ -259,19 +273,16 @@ body{
     margin:20px auto;
 }
 .swiper-container {
-    width: 100%;
+    width: 90%;
     min-height: 50vh;
    margin:auto auto;
     overflow-x: hidden;
   }
   .swiper-slide {
-      width: 100%;
-    min-height: 100%;
+    min-height: 200px;
     text-align: center;
-    border-radius: 10px;
-    font-size: 18px;
-    background:#203A43;
-   border:5px solid #fff;
+    background:#fff;
+   
     position: relative;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -288,15 +299,11 @@ body{
     -webkit-align-items: center;
     align-items: center;
   }
-  .swiper-wrapper:nth-child(2n){
-      transform: scale(1.5);
-  }
+  
   .swiper-slide > video{
       width:100%;
-      border:2px solid #fff;
       position: relative;
-      height:100%;
-      border-radius: 10px 10px 0px 0px;
+      height:80%;
   }
   @keyframes move{
       0%{
@@ -310,7 +317,7 @@ body{
   .swiper-slide > .project-description{
       position:relative;
       bottom:0;
-      color:#fff;
+      color:#203A43;
       z-index:20 ;
       width: 100%;
       line-height: 1.6;
@@ -329,9 +336,11 @@ body{
   .swiper-slide > .project-description > p{
     font-family: quicksand-light,Arial, Helvetica, sans-serif;
     margin:10px;
+    font-weight: 900;
 }
   .swiper-slide > .project-description > p::first-line{
       font-family: raleway-thin,monospace;
+      font-weight: 900;
   }
   .swiper-slide > .project-description > img{
       height:100px;
@@ -343,7 +352,6 @@ body{
   .swiper-slide > .project-description > ul{
       list-style: none;
       display: flex;
-      border-radius: 0 0 10px 10px;
       width:100%;
       border-top:1px solid #fff;
       justify-content: center;
@@ -354,25 +362,35 @@ body{
 }
 .swiper-slide > .project-description > ul >li >a{
     background: linear-gradient(to right,#00467F,#38ef7d);
+    animation: gradient 1s infinite alternate;
     padding:10px;
     border-radius: 10px;
     height:50px;
     width:150px;
+    transition:all 0.2s ease-in-out;
 }
-  .swiper-slide > .overlay{
-      height:50%;
-      width:100%;
-      display: none;
-      background-color: #0009;
-      position: absolute;
-      z-index: 10;
-      top:0px;
-  }
+@keyframes gradient{
+    0%{
+        background: linear-gradient(to left bottom,#00467F,#38ef7d);
+    }
+    100%{
+        background: linear-gradient(to right top,#00467F,#38ef7d);
+    }
+}
+@-webkit-keyframes gradient{
+    0%{
+        background: linear-gradient(to left bottom,#00467F,#38ef7d);
+    }
+    100%{
+        background: linear-gradient(to right top,#00467F,#38ef7d);
+    }
+}
   .swiper-button-prev,
   .swiper-button-next{
-      color:white;
-      background-color: #0009;
+      color:#b21f1f;
+      background: rgba(255, 255, 255, 0.5);
       padding: 20px;
+      font-weight: bolder;
       border-radius: 5px;
       outline: none;
   }
@@ -521,6 +539,9 @@ body{
         right: 0;
         width:200px
     }
+    .hidden-content > img{
+        width:100%;
+    }
  }
 /*
 @media only screen and (max-width:650px){
@@ -606,9 +627,9 @@ body{
      
 }
 @media only screen and (max-width:450px){
-    .swiper-button-prev,
-    .swiper-button-next{
-      top:30%;
+   
+    .swiper-slide{
+        width:100% !important;
     }
     .swiper-slide > .project-description > img{
         height:60px;
@@ -621,7 +642,7 @@ body{
     .swiper-slide > .project-description {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 20px;
     }
     .underline{
@@ -634,7 +655,7 @@ body{
       .swiper-slide > .project-description > p{
         font-family: quicksand-light,Arial, Helvetica, sans-serif;
         margin:10px;
-        text-align: left;
+        
     }
       .swiper-slide > .project-description > ul{
           list-style: none;
@@ -642,7 +663,7 @@ body{
           border-radius: 0 0 10px 10px;
           width:100%;
           border-top:1px solid #fff;
-          justify-content: flex-start;
+          justify-content: center;
       }
       .swiper-slide > .project-description > ul > li{
         margin:20px 5px;
@@ -654,6 +675,16 @@ body{
         border-radius: 10px;
         height:50px;
         width:150px;
+    }
+    .swiper-button-next{
+        top:60%;
+        background: transparent;
+        right:0 !important;
+    }
+    .swiper-button-prev{ 
+        top:60%;
+        background: transparent;
+        left: 0  !important;
     }
 }
 @media only screen and (max-width:350px)

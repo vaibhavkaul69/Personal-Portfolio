@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded',()=>{
     document.querySelector('.loader').style.cssText='opacity:0; display:none;';
     console.log('Body Loaded');
+    let chechPassword=prompt('Enter Password to View Content :');
+    if(chechPassword!==sessionStorage.getItem('password-website')){
+      document.getElementById('main_content').className='hidden-content';
+      document.getElementById('main_content').innerHTML='Sorry you entered a wrong password <br/>So you cannot access this site.<br/> Come back later :)<img src="/assets/404-error.png"/>'
+    }
 });
 const navbarOpenBtn=document.querySelector('.navbar_toggler_icon_open');
 const sideNavOpen=document.querySelector('.navbar_top');
@@ -65,16 +70,16 @@ var swiper = new Swiper('.swiper-container',
       spaceBetween: 20,
     },
     640: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     800: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 50,
     }
   }
 });
