@@ -1,11 +1,27 @@
 /** @format */
 
+const navbarOpenBtn = document.querySelector('.navbar_toggler_icon_open');
+const sideNavOpen = document.querySelector('.navbar_top');
+
+const heroHeading = document.querySelector('.main_head_name');
+const profile_name = document.querySelector('.profile_designation');
+const knowMoreBtn = document.querySelector(
+	'#name_section > .hero-text > button',
+);
+
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('.loader').style.cssText = 'opacity:0; display:none;';
 	console.log('Body Loaded');
+	setTimeout(() => {
+		heroHeading.style.opacity = '1';
+	}, 1000);
+	setTimeout(() => {
+		profile_name.style.cssText = 'transform:translateY(0px);';
+	}, 1200);
+	setTimeout(() => {
+		knowMoreBtn.style.cssText = 'transform:translateY(0px);';
+	}, 1500);
 });
-const navbarOpenBtn = document.querySelector('.navbar_toggler_icon_open');
-const sideNavOpen = document.querySelector('.navbar_top');
 
 document.querySelector('.about').addEventListener('click', () => {
 	document.getElementById('about_section').scrollIntoView();
@@ -37,51 +53,9 @@ navbarOpenBtn.addEventListener('click', () => {
 	}
 });
 
-var swiper = new Swiper('.swiper-container', {
-	slidesPerView: 1,
-	spaceBetween: 20,
-	loop: false,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	breakpoints: {
-		500: {
-			slidesPerView: 1,
-			spaceBetween: 20,
-		},
-		640: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-		},
-		800: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-		},
-		1024: {
-			slidesPerView: 2,
-			spaceBetween: 50,
-		},
-	},
-});
-
 setInterval(() => {
-	for (i in document.querySelectorAll(' .swiper-pagination-bullet ')) {
-		document.querySelectorAll(' .swiper-pagination-bullet ')[i].innerHTML = i;
+	if (window.innerWidth >= 575) {
+		sideNavOpen.style.cssText = 'transform: scale(1);display:flex;';
+		navbarOpenBtn.classList.add('open_side_nav');
 	}
 }, 1000);
-
-let Person = function (name, classname, roll) {
-	this.name = name;
-	this.branch = classname;
-	this.roll = roll;
-	console.log(name + ' ' + classname + ' ' + roll);
-};
-Person.prototype.hostelName = 'Boys Hostel';
-let person_1 = new Person('Vaibhav', 'CSE', 17001001062);
-console.log(hostelName in person_1);

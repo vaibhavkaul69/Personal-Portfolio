@@ -6,28 +6,24 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<link rel="icon" href="assets/vaibhav-photo.webp" />
 		<title>Portfolio Website Coming Soon</title>
+
 		<link
 			rel="stylesheet"
+			media="print"
 			href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
 		/>
 		<script
 			defer
 			src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
 		></script>
-		<link rel="stylesheet" href="css/swiper.min.css" />
+
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<div class="loader"></div>
 		<button class="navbar_toggler_icon_open">&#9776;</button>
-		<h3 class="name_top_head">VaibhavKaul</h3>
 		<nav class="navbar_top">
 			<ul class="navbar_list_item">
-				<li>
-					<a class="about" href="javascript:void(0)"
-						><i class="fas fa-user-check"></i>About</a
-					>
-				</li>
 				<li>
 					<a class="skills" href="javascript:void(0)"
 						><i class="fab fa-studiovinari"></i>Skills</a
@@ -62,21 +58,30 @@
                         <li><a href="#projects_section">Projects</a></li>
                 </ul>
             </div>
-            -->
-				<h1 class="main_head_name">
-					<span class="f-name">Vaibhav</span>
-					<span class="l-name">Kaul</span>
-				</h1>
-				<h2 class="profile_designation">
-					Frontend Developer
-				</h2>
+			-->
+				<div class="hero-text">
+					<h1 class="main_head_name">
+						<span class="f-name">Vaibhav </span>
+						<span class="l-name"> Kaul</span>
+					</h1>
+					<h2 class="profile_designation">
+						Frontend Developer
+					</h2>
+					<button class="about">
+						Know More About Me <span>&#10084;</span>
+					</button>
+				</div>
+				<!--<img class="hero-image-icon" src="assets/hero-image-icon.png" />-->
 			</section>
 
 			<section class="section" id="about_section">
 				<div class="sticky_about">
-					<h1 class="section_heading">
-						<i class="fas fa-user-check"></i> About me
-					</h1>
+					<div class="top-section-head">
+						<h1 class="section_heading">
+							about me
+						</h1>
+						<img class="section-heading-image" src="assets/about-me.png" />
+					</div>
 					<div class="intro_flex_container">
 						<div class="display_image">
 							<img
@@ -108,312 +113,37 @@
 				</div>
 			</section>
 			<section class="section" id="skills_section">
-				<h1 class="section_heading">
-					<i class="fab fa-studiovinari"></i> skills
-				</h1>
+				<div class="top-section-head">
+					<h1 class="section_heading skills-head">
+						skills
+					</h1>
+					<img class="section-heading-image" src="assets/skills.png" />
+				</div>
 			</section>
 			<section class="section" id="internships_section">
-				<h1 class="section_heading">
-					<i class="fas fa-paper-plane"></i> internships
-				</h1>
+				<div class="top-section-head">
+					<h1 class="section_heading internship-head">
+						internships
+					</h1>
+					<img class="section-heading-image" src="assets/internships.png" />
+				</div>
 			</section>
 			<section class="section" id="projects_section">
-				<h1 class="section_heading"><i class="fas fa-tasks"></i> projects</h1>
-				<div class="project_grid_container">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/baila-bollywood_First_Frame.webp"
-								>
-									<source src="/assets/baila-bollywood.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>Baila Bollywood</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript, Html, Bootstrap, Css, Swiper.js
-									</p>
-									<ul>
-										<li>
-											<a href="https://bailabollywood.com/ " target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/kalz-burger_First_Frame.webp"
-								>
-									<source src="/assets/kalz-burger.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>Kalz Burger</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css (Flexbox, Grids)<br />LocalStorage
-										API
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/KalzBurger"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/KalzBurger/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/zootopia_First_Frame.webp"
-								>
-									<source src="/assets/zootopia.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>Zootopia</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css (Flexbox, Grids)<br />LocalStorage
-										API
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/Headout"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/Headout/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/dice-to-win_First_Frame.webp"
-								>
-									<source src="/assets/dice-to-win.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>Dice To Win</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css (Grids)<br />Html Media API, PWA
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/dicetowin"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/dicetowin/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/imun_First_Frame.webp"
-								>
-									<source src="/assets/imun.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>IMUN"19</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css, Bootstrap
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/IMUN"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/IMUN/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/task-list_First_Frame.webp"
-								>
-									<source src="/assets/task-list.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>Task-List</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css ( Flexbox)<br />LocalStorage API, PWA
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/Task-List"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/Task-List/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/tedxducic_First_Frame.webp"
-								>
-									<source src="/assets/tedxducic.mp4" type="video/mp4" />
-								</video>
-								<div class="project-description">
-									<h1>TEDxDUCIC</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css, Bootstrap
-									</p>
-									<ul>
-										<li>
-											<a href="http://tedxducic.com/#/" target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="overlay"></div>
-								<video
-									loop
-									autoplay
-									muted
-									poster="/assets/percent-calculate_First_Frame.webp"
-								>
-									<source
-										src="/assets/percent-calculate.mp4"
-										type="video/mp4"
-									/>
-								</video>
-								<div class="project-description">
-									<h1>
-										Calculate <br />
-										Percentage
-									</h1>
-									<hr class="underline" />
-									<p>
-										Tech Stack :
-										<br />
-										Javascript , Html, Css, PWA
-									</p>
-									<ul>
-										<li>
-											<a
-												href="https://github.com/vaibhavkaul69/percentageCalculate"
-												target="_blank"
-												>Repo <i class="fab fa-github"></i
-											></a>
-										</li>
-										<li>
-											<a
-												href="https://vaibhavkaul69.github.io/percentageCalculate/"
-												target="_blank"
-												>Demo <i class="fas fa-quidditch"></i
-											></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Add Pagination -->
-
-						<!-- Add Arrows -->
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
+				<div class="top-section-head">
+					<h1 class="section_heading project-head">
+						projects
+					</h1>
+					<img class="section-heading-image" src="assets/projects.png" />
 				</div>
 			</section>
 			<section class="section" id="resume_section">
-				<h1 class="section_heading">
-					<i class="fas fa-address-card"></i> resume
-				</h1>
-				<a href="assets/Vaibhav's Resume.pdf" target="_blank">
+				<div class="top-section-head">
+					<h1 class="section_heading resume-head">
+						resume
+					</h1>
+					<img class="section-heading-image" src="assets/resume.png" />
+				</div>
+				<a href="assets/Vaibhav Resume.pdf" target="_blank">
 					<img src="assets/resume-photo.png" class="resume-placeholder"
 				/></a>
 			</section>
@@ -443,28 +173,22 @@
 						></a>
 					</li>
 				</div>
-				<div class="personal_contact">
+				<ul class="personal_contact">
+					<li>
+						<a href="mailto:vaibhav.kaul2@gmail.com" target="_blank"
+							>vaibhav.kaul2@gmail.com</a
+						>
+					</li>
 					<li>
 						<a
 							href="https://wa.me/919466142679?text=Apart%20from%20being%20sexy,%20what%20do%20you%20do%20for%20a%20living?"
 							target="_blank"
 							>+91-9466142679</a
 						>
-						<hr class="line" />
-						<a
-							href="https://wa.me/919896938770?text=Apart%20from%20being%20sexy,%20what%20do%20you%20do%20for%20a%20living?"
-							target="_blank"
-						>
-							+91-9896938770</a
-						>
 					</li>
-					<li>
-						<a href="mailto:vaibhav.kaul2@gmail.com">vaibhav.kaul2@gmail.com</a>
-					</li>
-				</div>
+				</ul>
 			</footer>
 		</main>
 	</body>
-	<script src="js/swiper.min.js"></script>
 	<script src="js/app.js"></script>
 </html>
