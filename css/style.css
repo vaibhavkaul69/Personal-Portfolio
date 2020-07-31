@@ -196,6 +196,7 @@ button:focus {
 }
 .top-section-head {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -270,9 +271,10 @@ button:focus {
 	justify-content: center;
 	align-items: center;
 	margin-top: 30px;
-	padding: 10px;
+	padding: 12px;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1rem;
+	font-size: 1.3rem;
+	border-radius: 10px;
 	background: rgba(33, 147, 176, 1);
 	color: #ffffff;
 	cursor: pointer;
@@ -432,6 +434,8 @@ a {
 }
 .sticky_about > .intro_flex_container {
 	display: flex;
+	opacity: 0;
+	transition: all 1s ease-in-out;
 	margin: 3rem auto;
 	justify-content: center;
 	padding: 10px;
@@ -489,8 +493,9 @@ a {
 /*Resume section*/
 .resume-placeholder {
 	display: block;
+	opacity: 0;
 	margin: 30px auto;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 .resume-placeholder:hover {
 	border-radius: 20px;
@@ -801,28 +806,26 @@ a {
 	}
 	#name_section > .hero-text > button {
 		left: 0px;
-		padding: 7px;
 	}
 }
 @media only screen and (max-width: 400px) {
 	.f-name {
-		margin-left: 50px;
+		margin-left: 00px;
 	}
 	.l-name {
 		display: block;
-		margin-left: 100px;
+		margin-left: 0px;
 	}
 	.main_head_name {
 		font-size: 4rem;
 	}
 	.profile_designation {
 		font-size: 1.7rem;
-		margin-left: 50px;
+		margin-left: 0px;
 	}
 	#name_section > .hero-text > button {
-		left: 15%;
-		padding: 7px;
-		font-size: 1.2rem;
+		left: 0%;
+		font-size: 1.5rem;
 	}
 	.swiper-slide > .project-description {
 		display: flex;
@@ -892,22 +895,21 @@ a {
 		left: 5%;
 	}
 	.f-name {
-		margin-left: 30px;
+		margin-left: 0px;
 	}
 	.l-name {
 		display: block;
-		margin-left: 80px;
+		margin-left: 0px;
 	}
 	.main_head_name {
 		font-size: 4rem;
 	}
 	.profile_designation {
 		font-size: 1.7rem;
-		margin-left: 30px;
+		margin-left: 0px;
 	}
 	#name_section > .hero-text > button {
-		left: 10%;
-		padding: 7px;
-		font-size: 1.2rem;
+		left: 0%;
+		font-size: 1.3rem;
 	}
 }

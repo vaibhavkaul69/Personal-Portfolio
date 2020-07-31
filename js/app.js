@@ -2,7 +2,9 @@
 
 const navbarOpenBtn = document.querySelector('.navbar_toggler_icon_open');
 const sideNavOpen = document.querySelector('.navbar_top');
-
+const aboutSection = document.querySelector(
+	'.sticky_about > .intro_flex_container',
+);
 const heroHeading = document.querySelector('.main_head_name');
 const profile_name = document.querySelector('.profile_designation');
 const knowMoreBtn = document.querySelector(
@@ -57,5 +59,20 @@ setInterval(() => {
 	if (window.innerWidth >= 575) {
 		sideNavOpen.style.cssText = 'transform: scale(1);display:flex;';
 		navbarOpenBtn.classList.add('open_side_nav');
+	}
+}, 1000);
+
+setInterval(() => {
+	if (window.scrollY <= 525) {
+		aboutSection.style.cssText = 'opacity: 0;';
+	} else {
+		aboutSection.style.cssText = 'opacity: 1;';
+	}
+}, 1000);
+setInterval(() => {
+	if (window.scrollY <= 2928) {
+		document.querySelector('.resume-placeholder').style.cssText = '	opacity: 0;';
+	} else {
+		document.querySelector('.resume-placeholder').style.cssText = '	opacity: 1;';
 	}
 }, 1000);
