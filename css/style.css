@@ -338,7 +338,7 @@ button:focus {
 	height: 70px;
 	bottom: 0px;
 	position: fixed;
-	background: #000;
+	background: rgba(0, 0, 0, 0.7);
 	justify-content: space-evenly;
 	z-index: 100;
 	align-items: center;
@@ -435,7 +435,7 @@ a {
 .sticky_about > .intro_flex_container {
 	display: flex;
 	opacity: 0;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	margin: 3rem auto;
 	justify-content: center;
 	padding: 10px;
@@ -495,7 +495,7 @@ a {
 	display: block;
 	opacity: 0;
 	margin: 30px auto;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .resume-placeholder:hover {
 	border-radius: 20px;
@@ -622,11 +622,12 @@ a {
 		flex-direction: column;
 		padding: 0px;
 		transform: scale(0);
-		min-width: 20%;
+		min-width: 30%;
 		box-sizing: border-box;
 		height: 100vh;
+		right: 0;
 		position: fixed;
-		background: #000;
+		background: rgba(0, 0, 0, 0.7);
 		justify-content: center;
 		z-index: 100;
 		align-items: center;
@@ -668,7 +669,8 @@ a {
 		position: fixed;
 		padding: 15px;
 		transition: all 0.3s ease-in-out;
-		right: 10px;
+		left: 10px;
+		z-index: 999;
 		border-radius: 10px;
 		top: 10px;
 	}

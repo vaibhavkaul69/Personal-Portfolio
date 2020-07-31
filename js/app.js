@@ -76,3 +76,13 @@ setInterval(() => {
 		document.querySelector('.resume-placeholder').style.cssText = '	opacity: 1;';
 	}
 }, 1000);
+
+//Rest parameter
+function addNumber(...param) {
+	console.log(param);
+	return param.reduce((prevValue, currentVal) => {
+		return prevValue + currentVal;
+	}, 0);
+}
+
+console.log(addNumber(2, 3, 4, 5, 6, 7, 8, 1, 20, 234, 56, 100));
