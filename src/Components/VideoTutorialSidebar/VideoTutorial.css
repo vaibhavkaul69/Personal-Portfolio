@@ -1,0 +1,14 @@
+.side-navbar-video-tutorial {
+	background-color: transparent;
+	border: none;
+}
+.video-tutorial-content {
+	width: 100%;
+}
+.video-tutorial-icon {
+	height: 55px;
+}
+.video-tutorial-label-text {
+	font: 600 23px "Roboto", sans-serif;
+	color: var(--blue);
+}

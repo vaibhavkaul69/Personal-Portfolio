@@ -1,0 +1,50 @@
+.search-sort-container {
+	position: relative;
+	width: 80%;
+}
+.search-input,
+.sort-input {
+	height: 50px;
+	position: relative;
+}
+.search-input-field {
+	border: 2px solid var(--blue);
+	border-radius: 10px;
+	font: 600 18px "Raleway", sans-serif;
+	letter-spacing: 1px;
+	height: 100%;
+	position: absolute;
+}
+.search-input-btn {
+	position: absolute;
+	height: 60%;
+	background-color: #fff;
+	cursor: pointer;
+	right: 10px;
+}
+.sort-input-btn {
+	height: 100%;
+	cursor: pointer;
+}
+.sort-option-container {
+	background: #fff;
+	height: 100px;
+	position: absolute;
+	top: 50px;
+	left: -30px;
+	width: 100px;
+}
+
+@media all and (max-width: 990px) {
+	.search-sort-container {
+		width: 100%;
+	}
+}
+@media all and (max-width: 500px) {
+	.search-input-field {
+		font: 600 14px "Raleway", sans-serif;
+	}
+	.search-input-btn {
+		height: 50%;
+	}
+}

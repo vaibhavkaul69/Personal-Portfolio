@@ -1,0 +1,85 @@
+.landing-page-container {
+	margin-top: 12rem;
+	font-family: "Raleway", sans-serif;
+}
+.landing-hero-heading {
+	font: 600 7rem "Raleway", sans-serif;
+}
+.landing-hero-heading-line {
+	width: 200px;
+	height: 5px;
+	background: linear-gradient(to right, var(--blue) 50%, var(--green) 50%);
+}
+.landing-hero-heading > span:nth-child(1) {
+	color: var(--green);
+}
+.landing-hero-heading > span:nth-child(2) {
+	color: var(--blue);
+}
+.landing-hero-subheading {
+	font-size: 2.5rem;
+	background: var(--green);
+	font-weight: 600;
+	width: 90%;
+}
+.landing-hero-cta-text {
+	background: var(--blue);
+	font-size: 1.5rem;
+	width: 90%;
+}
+.landing-login-btn {
+	width: 300px;
+	height: 60px;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid var(--green);
+	border-radius: 5px;
+	color: var(--green);
+	font: 600 25px "Roboto", sans-serif;
+}
+.landing-login-btn > span {
+	font-size: 40px;
+	position: relative;
+	top: -7px;
+}
+.landing-login-btn:hover {
+	transform: translateY(-5px);
+	color: var(--green);
+	box-shadow: 5px 5px 25px 0 var(--green-boxShadow);
+}
+
+@media all and (max-width: 600px) {
+	.landing-hero-heading {
+		font-size: 5rem;
+	}
+	.landing-hero-heading-line {
+		width: 100px;
+	}
+	.landing-hero-subheading {
+		font-size: 1.8rem;
+	}
+	.landing-hero-cta-text {
+		font-size: 1.3rem;
+	}
+	.landing-login-btn {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.landing-page-container {
+		margin-top: 7rem;
+	}
+	.landing-hero-heading {
+		font-size: 2.5rem;
+	}
+	.landing-hero-subheading {
+		font-size: 1.3rem;
+	}
+	.landing-hero-cta-text {
+		font-size: 1.1rem;
+	}
+	.landing-login-btn {
+		width: 90%;
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,91 @@
+.form-input-field {
+	width: 100%;
+	border-radius: 5px;
+	height: 40px;
+	font: 400 15px "Roboto", sans-serif;
+	border: 2px solid var(--blue);
+	background: #fff;
+}
+.modal-container-bg {
+	height: 100vh;
+	width: 100%;
+	background: rgba(26, 26, 26, 0.5);
+	z-index: 9999;
+	padding-top: 100px;
+	position: fixed;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+}
+.modal-container {
+	min-height: 200px;
+	width: 450px;
+	border-radius: 10px;
+	background: #fff;
+}
+.modal-title {
+	font: 400 30px "Roboto", sans-serif;
+	color: var(--blue);
+}
+.modal-cross-close-btn {
+	font-size: 40px;
+	background: #eee;
+	padding: 3px 9px;
+}
+.add-user-header-btn,
+.add-transaction-header-btn {
+	width: 100%;
+	font: 600 18px "Raleway", sans-serif;
+	border: none;
+	transition: all 0.2s ease-in-out;
+	background: #fff;
+	height: 40px;
+	position: relative;
+	top: 5px;
+}
+.active-border {
+	border: 1px solid #dee2e6;
+	color: #fff;
+	background: var(--blue);
+	box-shadow: 5px 5px 10px 0 rgba(46, 61, 73, 0.2);
+	border-bottom: none;
+}
+.modal-icon {
+	height: 40px;
+	width: 50px;
+}
+.modal-footer-close-btn,
+.modal-footer-add-btn {
+	min-width: 10px;
+	box-shadow: 5px 0px 10px 0 rgba(46, 61, 73, 0.2);
+	border: none;
+	border-radius: 5px;
+	font: 400 20px "Roboto", sans-serif;
+}
+.modal-footer-close-btn {
+	background-color: var(--red);
+}
+.modal-footer-add-btn {
+	background-color: var(--green);
+}
+.modal-form-label {
+	font: 400 20px "Raleway", sans-serif;
+}
+
+@media all and (max-width: 500px) {
+	.modal-container {
+		width: 90%;
+	}
+	.modal-footer-close-btn,
+	.modal-footer-add-btn {
+		font-size: 17px;
+	}
+	.modal-icon {
+		height: 30px;
+		width: 40px;
+	}
+	.modal-title {
+		font-size: 20px;
+	}
+}

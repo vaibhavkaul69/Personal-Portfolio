@@ -1,0 +1,35 @@
+.error_success_info_modal-container {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	padding-top: 100px;
+	background: #0009;
+	left: 0px;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+.user-action-modal-body {
+	min-height: 300px;
+	width: 400px;
+	position: relative;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.5);
+}
+.user-action-modal-close-btn {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.user-action-modal-text {
+	font: 400 30px "Raleway", sans-serif;
+}
+@media all and (max-width: 500px) {
+	.user-action-modal-body {
+		width: 90%;
+	}
+	.user-action-modal-text {
+		font: 400 20px "Raleway", sans-serif;
+	}
+}

@@ -1,0 +1,14 @@
+.side-navbar-theme-toggler {
+	background-color: transparent;
+	border: none;
+}
+.theme-toggle-label {
+	width: 100%;
+}
+.theme-toggler-btn {
+	height: 50px;
+}
+.theme-toggler-label-text {
+	font: 600 23px "Roboto", sans-serif;
+	color: var(--blue);
+}

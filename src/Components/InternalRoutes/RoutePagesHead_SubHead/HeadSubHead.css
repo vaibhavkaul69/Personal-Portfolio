@@ -1,0 +1,24 @@
+.route-pages-head-subhead-container {
+	margin-top: 10rem;
+}
+.route-pages__heading {
+	color: var(--blue);
+	font: bold 40px "Roboto", sans-serif;
+	color: var(--blue);
+
+	letter-spacing: 1px;
+}
+.route_pages__subheading {
+	font: 600 20px "Raleway", sans-serif;
+	letter-spacing: 1px;
+	color: var(--blue);
+}
+
+@media all and (max-width: 400px) {
+	.route-pages-head-subhead-container {
+		margin-top: 8rem;
+	}
+	.route-pages__heading {
+		font-size: 30px;
+	}
+}

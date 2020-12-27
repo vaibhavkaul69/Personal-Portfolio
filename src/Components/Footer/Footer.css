@@ -1,0 +1,30 @@
+.social-media-footer-icon {
+	height: 40px;
+	margin: 10px;
+}
+.facebook-footer-icon,
+.github-footer-icon {
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.footer-text {
+	font: 400 30px "Raleway", sans-serif;
+}
+.follow-footer-text {
+	font: 400 20px "Raleway", sans-serif;
+}
+
+@media all and (max-width: 500px) {
+	.social-media-footer-icon {
+		height: 30px;
+		margin: 5px;
+	}
+
+	.footer-text {
+		font: 400 18px "Raleway", sans-serif;
+	}
+	.follow-footer-text {
+		font: 400 15px "Raleway", sans-serif;
+	}
+}

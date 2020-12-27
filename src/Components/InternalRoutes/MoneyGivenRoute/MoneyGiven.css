@@ -1,0 +1,77 @@
+.open-add-transaction-modal-btn {
+	height: 75px;
+	width: 80px;
+	border-radius: 50%;
+	background: var(--green);
+	border: none;
+	z-index: 99;
+	font-size: 3rem;
+	box-shadow: 5px 10px 25px 0 rgba(46, 61, 73, 0.2);
+}
+.search-sort-add-item {
+	transition: all 0.3s ease-in-out;
+	padding: 10px;
+}
+.search-sort-add-operation-container__fixed {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	padding: 7px;
+	z-index: 99;
+}
+#dark-theme-sticky-search-sort-add {
+	background: #1a1a1a;
+}
+#light-theme-sticky-search-sort-add {
+	background: #fff;
+}
+.add-user-icon {
+	width: 40px;
+}
+.small-screen-add-user-transaction-btn {
+	display: none;
+}
+.large-screen-add-user-transaction-btn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+@media all and (min-width: 1050px) {
+	.search-sort-add-operation-container__fixed {
+		top: 130px;
+	}
+}
+@media all and (max-width: 1050px) {
+	.search-sort-add-operation-container__fixed {
+		top: 130px;
+	}
+}
+@media all and (max-width: 991px) {
+	.open-add-transaction-modal-btn {
+		right: 10px;
+		bottom: 10px;
+	}
+	.small-screen-add-user-transaction-btn {
+		display: flex;
+	}
+	.large-screen-add-user-transaction-btn {
+		display: none;
+	}
+}
+@media all and (max-width: 600px) {
+	.search-sort-add-operation-container__fixed {
+		top: 95px;
+	}
+}
+@media all and (max-width: 400px) {
+	.open-add-transaction-modal-btn {
+		height: 65px;
+		width: 70px;
+		font-size: 2rem;
+		bottom: 5px;
+		right: 5px;
+	}
+	.search-sort-add-operation-container__fixed {
+		top: 70px;
+	}
+}

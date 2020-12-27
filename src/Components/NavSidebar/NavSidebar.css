@@ -1,0 +1,102 @@
+#side-navbar-container {
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+
+	transition: all 0.3s ease-in-out;
+	left: 0;
+	/*display: none;*/
+	z-index: 9999;
+	background: transparent;
+}
+.hidden-sidebar {
+	transform: translateX(-100vw);
+	width: 0px;
+}
+.visible-sidebar {
+	transform: translateX(0vw);
+	width: 100%;
+}
+
+.side-navbar-body {
+	width: 400px;
+	height: 100vh;
+	box-shadow: var(--black-boxShadow);
+	position: relative;
+}
+.side-navbar-head {
+	position: relative;
+}
+.side-navbar-close-btn {
+	position: absolute;
+	top: 10px;
+	height: 45px;
+	width: 45px;
+	font-size: 40px;
+	border: none;
+	background: var(--red);
+	right: 10px;
+}
+.side-navbar-head-logo {
+	height: 150px;
+	width: 150px;
+}
+.side-navbar-head-text {
+	font: 600 45px "Raleway", sans-serif;
+}
+.side-navbar-head-text > span:nth-child(1) {
+	color: var(--green);
+}
+.side-navbar-head-text > span:nth-child(2) {
+	color: var(--blue);
+}
+/*
+.light-theme-text {
+	color: #1a1a1a;
+}
+.dark-theme-text {
+	color: #fff;
+}
+*/
+
+.side-navbar-footer {
+	background: #eee;
+	height: 40px;
+	width: 100%;
+}
+.side-navbar-footer-username {
+	font: 400 20px "Poppins", sans-serif;
+	color: grey;
+	text-transform: capitalize;
+}
+.side-navbar-footer-logout-btn {
+	height: 100%;
+	background: var(--red);
+	font: 600 18px "Roboto", sans-serif;
+	border: 2px solid var(--red);
+	width: 110px;
+}
+.logout-image {
+	height: 30px;
+	width: 30px;
+}
+/*
+@media all and (max-width: 1020px) {
+	#side-navbar-container {
+		display: block;
+	}
+}
+*/
+@media all and (max-width: 450px) {
+	.side-navbar-body {
+		width: 100%;
+	}
+	.side-navbar-head-logo {
+		height: 120px;
+		width: 120px;
+	}
+	.side-navbar-head-text {
+		font-size: 40px;
+	}
+}

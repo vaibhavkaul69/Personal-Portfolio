@@ -1,0 +1,9 @@
+
+28/11/2020
+    1. Login Register added.
+    2. On register the data gets added to state and at local storage.
+
+29/11/2020
+    1. User transaction history added today.
+    2. Success error and info modal added.
+    3. Success error and info modal problem in accesing it in other contexts.

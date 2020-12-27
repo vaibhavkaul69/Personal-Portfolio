@@ -1,0 +1,321 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+:root {
+	--blue: #596fa2;
+	--green: #40b7ad;
+	--red: #da4453;
+	--yellow: #e9d362;
+	--pink: #ee0979;
+	--green-boxShadow: rgba(64, 183, 173, 0.3);
+	--red-boxShadow: rgba(218, 68, 83, 0.3);
+	--blue-boxShadow: rgba(89, 111, 162, 0.3);
+	--black-boxShadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.5);
+}
+.tutorial-text {
+	color: #757f9a;
+	font: 400 11px "Poppins", sans-serif;
+}
+.light-theme-body {
+	min-height: 100vh;
+	width: 100%;
+	background: url("./images/body-bg.png") center;
+
+	overflow-x: hidden;
+}
+
+.dark-theme-body {
+	background: #0e0e0e url("../src/images/body-bg.png") center;
+}
+.money-given-container,
+.money-to-take-container,
+.settled-transaction-container,
+.important-transaction-container {
+	min-height: 100vh;
+	width: 100%;
+}
+a {
+	text-decoration: none !important;
+}
+
+button,
+textarea,
+select:focus,
+textarea:focus input,
+button:focus,
+input:focus {
+	outline: none;
+}
+/****Navbar Css starts here****/
+.navbar {
+	box-shadow: 5px 0px 10px 0 rgba(46, 61, 73, 0.2);
+	position: fixed;
+	background: #1a1a1a;
+	top: 0;
+	height: 130px;
+	z-index: 999;
+}
+.top-navbar-item {
+	height: 100%;
+}
+.navbar__logo {
+	height: 100px;
+	width: 100px;
+}
+.theme-toggler-icon-navbar {
+	height: 50px;
+	width: 50px;
+}
+.navbar__brand-name {
+	font: 600 40px "Raleway", sans-serif;
+}
+.navbar__brand-name--first-child {
+	color: var(--green);
+}
+.navbar__brand-name--second-child {
+	color: var(--blue);
+}
+.toggle-sidebar-btn {
+	font-size: 2.8rem;
+	border: none;
+	display: none;
+	height: 50px;
+	width: 50px;
+	background: transparent;
+	color: var(--blue);
+}
+.toggle-sidebar-btn > span {
+	height: 5px;
+	background: var(--blue);
+	border-radius: 1px;
+	display: block;
+	margin-top: 10px;
+}
+.toggle-sidebar-btn > span:nth-child(1) {
+	width: 100%;
+}
+.toggle-sidebar-btn > span:nth-child(2) {
+	width: 70%;
+}
+.toggle-sidebar-btn > span:nth-child(3) {
+	width: 40%;
+}
+
+.top-navbar-theme-toggler,
+.top-navbar-video-tutorial {
+	display: flex;
+}
+.top-nav-video-tutorial-content,
+.top-nav-theme-toggler-content {
+	width: 200px;
+}
+.top-navbar-theme-toggler,
+.top-navbar-video-tutorial {
+	background-color: transparent;
+	border: none;
+}
+.top-nav-video-tutorial-icon,
+.top-nav-theme-toggler-icon {
+	height: 40px;
+}
+.top-nav-theme-toggler-label-text,
+.top-nav-video-tutorial-label-text {
+	font: 600 18px "Roboto", sans-serif;
+	color: var(--blue);
+}
+
+.close-theme-toggler-container-header > .close-toggle-theme-container-btn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 30px;
+	font-size: 25px;
+	width: 30px;
+	background: var(--red);
+	color: #fff;
+	border: none;
+}
+
+/****Navbar Css ends here****/
+
+/**** Transaction homepage entity css starts here****/
+.main-bg-container {
+	min-height: 100vh;
+	width: 100%;
+	background: transparent;
+	top: 0px;
+}
+
+.transaction-entities-container {
+	background-size: 100% 100%;
+}
+.transaction-entity {
+	height: 100px;
+	min-width: 200px;
+	font: 600 22px "Raleway", sans-serif;
+	border-radius: 10px;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	letter-spacing: 1px;
+}
+.entity-btn-icon {
+	height: 40px;
+	margin-left: 10px;
+}
+.transaction-entity:hover {
+	transform: translateY(-6px);
+	box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.5);
+}
+.transaction-entity__money-given {
+	background: var(--red);
+	color: #fff;
+	border: 2px solid var(--red);
+}
+.transaction-entity__money-given:hover {
+	color: #fff;
+}
+/*
+.transaction-entity__money-to-take {
+	color: #fff !important;
+	border: 2px solid var(--green);
+	background: var(--green);
+}
+*/
+.transaction-entity__imp-transact {
+	color: #fff !important;
+	background: var(--yellow);
+	border: 2px solid var(--yellow);
+}
+
+.transaction-entity__settled-transact {
+	color: #fff;
+	border: 2px solid #96c93d;
+	background: #96c93d;
+}
+.transaction-entity__settled-transact:hover {
+	color: #fff;
+}
+/**** Transaction homepage entity css ends here****/
+
+/****Recent activity css starts here****/
+.recent-activity-container {
+	margin-top: 6rem;
+}
+.recent-activity__heading {
+	font: bold 40px "Roboto", sans-serif;
+	color: var(--blue);
+	letter-spacing: 1px;
+}
+.recent-activity__subheading {
+	font: 600 20px "Raleway", sans-serif;
+	color: var(--blue);
+	letter-spacing: 1px;
+}
+/**** Recent activity css ends here****/
+
+/*** Error 404 page and Access-denied css starts here***/
+.error-404-container {
+	height: 100vh;
+	width: 100%;
+}
+.error-404-text,
+.no-transaction-entry-text {
+	font: 400 40px "Raleway", sans-serif;
+}
+.back-to-home-error-404-btn {
+	font: 600 20px "Roboto", sans-serif;
+	background: #fff;
+	color: var(--green);
+	margin: 20px auto;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid var(--green);
+}
+.back-to-home-error-404-btn:hover {
+	transform: translateY(-6px);
+	color: var(--green);
+	box-shadow: 5px 5px 25px 0 var(--green-boxShadow);
+}
+.access-denied-image {
+	height: 300px;
+	position: relative;
+	left: 20px;
+}
+/**** Error 404 page and Access-denied css ends here****/
+
+/***
+	RESPONSIVE CODE STARTS HERE
+****/
+
+@media all and (max-width: 1050px) {
+	.toggle-sidebar-btn {
+		display: block;
+	}
+	.top-navbar-theme-toggler,
+	.top-navbar-video-tutorial,
+	.nav-top-right-btns {
+		display: none !important;
+	}
+}
+@media all and (max-width: 600px) {
+	.navbar,
+	.top-navbar-item {
+		height: auto;
+	}
+	.navbar__logo {
+		height: 80px;
+		width: 80px;
+	}
+
+	.navbar__brand-name {
+		font: 600 30px "Raleway", sans-serif;
+	}
+	.transaction-entity {
+		height: 80px;
+		font: 600 20px "Raleway", sans-serif;
+		letter-spacing: 1px;
+	}
+	.recent-activity__heading {
+		font: bold 35px "Roboto", sans-serif;
+	}
+	.recent-activity__subheading {
+		font: 400 18px "Raleway", sans-serif;
+		color: var(--blue);
+		letter-spacing: 1px;
+	}
+	.transaction-entities-container {
+		margin-top: 0rem;
+	}
+	.transaction-entity__settled-transact {
+		margin-left: 20px;
+	}
+}
+
+@media all and (max-width: 450px) {
+	.transaction-entity {
+		min-width: 90%;
+	}
+	.transaction-entity__settled-transact {
+		margin-left: 00px;
+		margin-top: 20px;
+	}
+	.error-404-text,
+	.no-transaction-entry-text {
+		font: 400 30px "Raleway", sans-serif;
+	}
+}
+@media all and (max-width: 400px) {
+	.navbar__logo {
+		height: 55px;
+		width: 55px;
+	}
+	.theme-toggler-icon-navbar {
+		height: 40px;
+		width: 40px;
+	}
+	.navbar__brand-name {
+		font-size: 22px;
+	}
+}

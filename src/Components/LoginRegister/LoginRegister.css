@@ -1,0 +1,60 @@
+.login-register-container {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	background: url("../../images/homepage_bg.jpg");
+	background-size: cover;
+	top: 0px;
+}
+.login-container,
+.register-container {
+	margin-top: 10rem;
+	border: none;
+	background: #fff;
+	min-height: 300px;
+	box-shadow: var(--black-boxShadow);
+	font-family: "Raleway", sans-serif;
+	width: 400px;
+}
+.user-auth-form-header {
+	font-size: 35px;
+}
+
+.user-auth-form-body > h2 {
+	font-size: 25px;
+}
+.user-auth-form-body > input {
+	font-size: 15px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	height: 45px;
+	border: 2px solid var(--blue);
+}
+.user-auth-form-body > input:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 25px 0 var(--blue-boxShadow);
+}
+#userLogin,
+#userRegister {
+	width: 100px;
+	height: 40px;
+	position: relative;
+	top: 9px;
+	font-weight: 600;
+	background: var(--green);
+	border: none;
+}
+
+.redirect-btn {
+	width: 120px;
+	background: var(--red);
+	height: 40px;
+}
+
+@media all and (max-width: 500px) {
+	.login-container,
+	.register-container {
+		margin-top: 6rem;
+		width: 90%;
+	}
+}
